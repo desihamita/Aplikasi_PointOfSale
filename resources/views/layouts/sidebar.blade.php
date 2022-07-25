@@ -14,13 +14,14 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
             <li>
-                <a href="index.html">
-                    </i> Dashboard
+                <a href="{{ url('dashboard') }}">
+                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
             </li>
+
             <li class="treeview">
                 <a href="#">
-                    <span>Master Data</span>
+                    <i class="fa fa-table"></i><span>Master Data</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -34,7 +35,7 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <span>Transaksi</span>
+                    <i class="fa fa-bank "></i><span>Transaksi</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -49,7 +50,7 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <span>Report</span>
+                    <i class="fa fa-external-link"></i><span>Report</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -61,7 +62,7 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    </i> <span>Pengaturan</span>
+                    <i class="fa fa-gears "></i><span>Pengaturan</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
