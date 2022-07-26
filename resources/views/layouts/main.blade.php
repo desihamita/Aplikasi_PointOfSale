@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{config('app.name')}} | @yield('title')</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -21,6 +22,8 @@
     <link rel="stylesheet" href="{{ asset('AdminLTE-2/bower_components/morris.js/morris.css')}}">
     <!-- jvectormap -->
     <link rel="stylesheet" href="{{ asset('AdminLTE-2/bower_components/jvectormap/jquery-jvectormap.css')}}">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('AdminLTE-2/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css')}}">
     <!-- Date Picker -->
     <link rel="stylesheet"
         href="{{ asset('AdminLTE-2/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}">
@@ -105,6 +108,9 @@
     <script src="{{ asset('AdminLTE-2/bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
     <!-- FastClick -->
     <script src="{{ asset('AdminLTE-2/bower_components/fastclick/lib/fastclick.js')}}"></script>
+    <!-- DataTables -->
+    <script src="{{asset('AdminLTE-2/bower_components/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('AdminLTE-2/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
     <!-- AdminLTE App -->
     <script src="{{ asset('AdminLTE-2/dist/js/adminlte.min.js')}}"></script>
     <!-- ChartJS -->
@@ -113,5 +119,9 @@
     <script src="{{ asset('AdminLTE-2/dist/js/pages/dashboard.js')}}"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{asset('AdminLTE-2/dist/js/pages/dashboard2.js')}}"></script>
+    {{-- validator --}}
+    <script src="{{ asset('js/validator.min.js') }}"></script>
+
+    @stack('scripts')
 </body>
 </html>

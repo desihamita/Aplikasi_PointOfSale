@@ -27,7 +27,7 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/charts/chartjs.html"><i class="fa fa-cube"></i> Kategori</a></li>
+                    <li><a href="{{route('kategori.index')}}"><i class="fa fa-cube"></i> Kategori</a></li>
                     <li><a href="pages/charts/morris.html"><i class="fa fa-cubes"></i> Produk</a></li>
                     <li><a href="pages/charts/flot.html"><i class="fa fa-id-card"></i> Member</a></li>
                     <li><a href="pages/charts/inline.html"><i class="fa fa-truck"></i> Supplier</a></li>
